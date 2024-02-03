@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* > * {
+  font-family: "Protest Riot, sans-serif";
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-extrabold py-2 text-green-800 m-1 ml-4 mt-4;
+  }
+  input {
+    @apply border  p-4 block w-full rounded-lg m-4 shadow shadow-inherit shadow-white;
+  }
+  textarea {
+    @apply border p-4 block w-full rounded-lg m-4 shadow shadow-inherit shadow-white;
+  }
+
+  button {
+    @apply bg-green-700 bg-opacity-70 px-4 py-2 rounded-lg text-white hover:bg-black hover:border-indigo-500 hover:text-indigo-100 cursor-pointer transition duration-150 ease-out hover:ease-in cursor-pointer hover:scale-[1.03] disabled:opacity-40 disabled:cursor-wait;
+  }
+}
